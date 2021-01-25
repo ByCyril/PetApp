@@ -15,8 +15,6 @@
 		010D769425BF657500DD7C45 /* PetAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D766725BF657400DD7C45 /* PetAppApp.swift */; };
 		010D769525BF657500DD7C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D766825BF657400DD7C45 /* ContentView.swift */; };
 		010D769625BF657500DD7C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D766825BF657400DD7C45 /* ContentView.swift */; };
-		010D769725BF657500DD7C45 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D766925BF657400DD7C45 /* Persistence.swift */; };
-		010D769825BF657500DD7C45 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D766925BF657400DD7C45 /* Persistence.swift */; };
 		010D769925BF657500DD7C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D766A25BF657500DD7C45 /* Assets.xcassets */; };
 		010D769A25BF657500DD7C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D766A25BF657500DD7C45 /* Assets.xcassets */; };
 		010D76B225BF659B00DD7C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D76B125BF659B00DD7C45 /* Assets.xcassets */; };
@@ -29,6 +27,8 @@
 		010D76C825BF659C00DD7C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D76C725BF659C00DD7C45 /* Assets.xcassets */; };
 		010D76CB25BF659C00DD7C45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D76CA25BF659C00DD7C45 /* Preview Assets.xcassets */; };
 		010D76D025BF659C00DD7C45 /* PetAppWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 010D76AF25BF659A00DD7C45 /* PetAppWatchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		018C796D25BF663700643011 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C796C25BF663700643011 /* Persistence.swift */; };
+		018C796E25BF663700643011 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C796C25BF663700643011 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +91,6 @@
 		010D766625BF657400DD7C45 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		010D766725BF657400DD7C45 /* PetAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAppApp.swift; sourceTree = "<group>"; };
 		010D766825BF657400DD7C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		010D766925BF657400DD7C45 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		010D766A25BF657500DD7C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		010D766F25BF657500DD7C45 /* PetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		010D767225BF657500DD7C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +116,7 @@
 		010D76CA25BF659C00DD7C45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		010D76CC25BF659C00DD7C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010D76CD25BF659C00DD7C45 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		018C796C25BF663700643011 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 			children = (
 				010D766725BF657400DD7C45 /* PetAppApp.swift */,
 				010D766825BF657400DD7C45 /* ContentView.swift */,
-				010D766925BF657400DD7C45 /* Persistence.swift */,
+				018C796C25BF663700643011 /* Persistence.swift */,
 				010D766A25BF657500DD7C45 /* Assets.xcassets */,
 				010D766525BF657400DD7C45 /* PetApp.xcdatamodeld */,
 			);
@@ -484,7 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010D769125BF657500DD7C45 /* PetApp.xcdatamodeld in Sources */,
-				010D769725BF657500DD7C45 /* Persistence.swift in Sources */,
+				018C796D25BF663700643011 /* Persistence.swift in Sources */,
 				010D769325BF657500DD7C45 /* PetAppApp.swift in Sources */,
 				010D769525BF657500DD7C45 /* ContentView.swift in Sources */,
 			);
@@ -495,7 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010D769225BF657500DD7C45 /* PetApp.xcdatamodeld in Sources */,
-				010D769825BF657500DD7C45 /* Persistence.swift in Sources */,
+				018C796E25BF663700643011 /* Persistence.swift in Sources */,
 				010D769425BF657500DD7C45 /* PetAppApp.swift in Sources */,
 				010D769625BF657500DD7C45 /* ContentView.swift in Sources */,
 			);
