@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,9 +26,12 @@
 		010D76C625BF659B00DD7C45 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D76C525BF659B00DD7C45 /* ComplicationController.swift */; };
 		010D76C825BF659C00DD7C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D76C725BF659C00DD7C45 /* Assets.xcassets */; };
 		010D76CB25BF659C00DD7C45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D76CA25BF659C00DD7C45 /* Preview Assets.xcassets */; };
-		010D76D025BF659C00DD7C45 /* PetAppWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 010D76AF25BF659A00DD7C45 /* PetAppWatchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		010D76D025BF659C00DD7C45 /* PetAppWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 010D76AF25BF659A00DD7C45 /* PetAppWatchOS.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		018C796D25BF663700643011 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C796C25BF663700643011 /* Persistence.swift */; };
 		018C796E25BF663700643011 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C796C25BF663700643011 /* Persistence.swift */; };
+		01AE2C7725C66D230099DBB9 /* PASignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE2C7625C66D230099DBB9 /* PASignIn.swift */; };
+		01AE2C7825C66D230099DBB9 /* PASignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE2C7625C66D230099DBB9 /* PASignIn.swift */; };
+		01E16EEE25BF74050069D050 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E16EED25BF74050069D050 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,10 @@
 		010D76CC25BF659C00DD7C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010D76CD25BF659C00DD7C45 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		018C796C25BF663700643011 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		01AE2C7625C66D230099DBB9 /* PASignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PASignIn.swift; sourceTree = "<group>"; };
+		01AE2C7F25C66D5F0099DBB9 /* PetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetApp.entitlements; sourceTree = "<group>"; };
+		01E16EEB25BF74020069D050 /* PetAppWatchOS Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PetAppWatchOS Extension.entitlements"; sourceTree = "<group>"; };
+		01E16EED25BF74050069D050 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E16EEE25BF74050069D050 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +169,7 @@
 		010D765F25BF657400DD7C45 = {
 			isa = PBXGroup;
 			children = (
+				01AE2C7F25C66D5F0099DBB9 /* PetApp.entitlements */,
 				010D766425BF657400DD7C45 /* Shared */,
 				010D767125BF657500DD7C45 /* iOS */,
 				010D767825BF657500DD7C45 /* macOS */,
@@ -169,6 +178,7 @@
 				010D76B025BF659A00DD7C45 /* PetAppWatchOS */,
 				010D76BC25BF659B00DD7C45 /* PetAppWatchOS Extension */,
 				010D767025BF657500DD7C45 /* Products */,
+				01E16EEC25BF74050069D050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				010D766725BF657400DD7C45 /* PetAppApp.swift */,
+				01AE2C7625C66D230099DBB9 /* PASignIn.swift */,
 				010D766825BF657400DD7C45 /* ContentView.swift */,
 				018C796C25BF663700643011 /* Persistence.swift */,
 				010D766A25BF657500DD7C45 /* Assets.xcassets */,
@@ -244,6 +255,7 @@
 		010D76BC25BF659B00DD7C45 /* PetAppWatchOS Extension */ = {
 			isa = PBXGroup;
 			children = (
+				01E16EEB25BF74020069D050 /* PetAppWatchOS Extension.entitlements */,
 				010D76BD25BF659B00DD7C45 /* PetAppApp.swift */,
 				010D76BF25BF659B00DD7C45 /* ContentView.swift */,
 				010D76C125BF659B00DD7C45 /* NotificationController.swift */,
@@ -263,6 +275,14 @@
 				010D76CA25BF659C00DD7C45 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01E16EEC25BF74050069D050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E16EED25BF74050069D050 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +506,7 @@
 				010D769125BF657500DD7C45 /* PetApp.xcdatamodeld in Sources */,
 				018C796D25BF663700643011 /* Persistence.swift in Sources */,
 				010D769325BF657500DD7C45 /* PetAppApp.swift in Sources */,
+				01AE2C7725C66D230099DBB9 /* PASignIn.swift in Sources */,
 				010D769525BF657500DD7C45 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +518,7 @@
 				010D769225BF657500DD7C45 /* PetApp.xcdatamodeld in Sources */,
 				018C796E25BF663700643011 /* Persistence.swift in Sources */,
 				010D769425BF657500DD7C45 /* PetAppApp.swift in Sources */,
+				01AE2C7825C66D230099DBB9 /* PASignIn.swift in Sources */,
 				010D769625BF657500DD7C45 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +571,7 @@
 		};
 		010D76CF25BF659C00DD7C45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 010D76AE25BF659A00DD7C45 /* PetAppWatchOS */;
 			targetProxy = 010D76CE25BF659C00DD7C45 /* PBXContainerItemProxy */;
 		};
@@ -671,6 +694,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PetApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R986STKYJ7;
 				ENABLE_PREVIEWS = YES;
@@ -683,6 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ByCyril.PetApp;
 				PRODUCT_NAME = PetApp;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -693,6 +718,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PetApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R986STKYJ7;
 				ENABLE_PREVIEWS = YES;
@@ -705,6 +731,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ByCyril.PetApp;
 				PRODUCT_NAME = PetApp;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -852,6 +879,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "PetAppWatchOS Extension/PetAppWatchOS Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PetAppWatchOS Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = R986STKYJ7;
@@ -876,6 +904,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "PetAppWatchOS Extension/PetAppWatchOS Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PetAppWatchOS Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = R986STKYJ7;
